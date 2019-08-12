@@ -1,0 +1,22 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+
+config:
+  dataSource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:memdb
+    username: sa
+    password:
+  jpa:
+    dialect: org.hibernate.dialect.H2Dialect
+
+jwt:
+  subject: johnsuhr/application
+  signingKey: c5d002d186794435adbd30285442843f
